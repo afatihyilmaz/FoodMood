@@ -7,6 +7,6 @@
 
 import Foundation
 
-class YemeklerResponse : Codable {
-    var yemekler:[Yemekler]?
+class FoodsResponse : Codable {
+    var yemekler:[Foods]?
 }

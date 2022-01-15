@@ -16,8 +16,8 @@ class SearchVC: UIViewController {
     
     var searchPresenterObject:ViewToPresenterSearchProtocol?
     
-    var foodList = [Yemekler]()
-    var searchList = [Yemekler]()
+    var foodList = [Foods]()
+    var searchList = [Foods]()
     var basketItemCount = 0
     
     override func viewDidLoad() {
@@ -46,7 +46,7 @@ class SearchVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "searchToDetailVC" {
-            let food = sender as? Yemekler
+            let food = sender as? Foods
             let destinationVC = segue.destination as! FoodDetailVC
             destinationVC.food = food
         }
@@ -54,7 +54,7 @@ class SearchVC: UIViewController {
 }
 
 extension SearchVC : PresenterToViewSearchProtocol {
-    func sendDataToView(foodList: Array<Yemekler>) {
+    func sendDataToView(foodList: Array<Foods>) {
         self.foodList = foodList
         self.searchList = self.foodList
         DispatchQueue.main.async {

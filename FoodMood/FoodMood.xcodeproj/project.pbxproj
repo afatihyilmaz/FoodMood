@@ -18,8 +18,8 @@
 		9D66078D278CC55F00A2984E /* FoodMoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D66078C278CC55F00A2984E /* FoodMoodUITestsLaunchTests.swift */; };
 		9D66079B278CC5B200A2984E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9D66079A278CC5B200A2984E /* Alamofire */; };
 		9D66079E278CC5D100A2984E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9D66079D278CC5D100A2984E /* Kingfisher */; };
-		9D6607A7278CCAA700A2984E /* Yemekler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6607A6278CCAA700A2984E /* Yemekler.swift */; };
-		9D6607A9278CCB8100A2984E /* YemeklerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6607A8278CCB8100A2984E /* YemeklerResponse.swift */; };
+		9D6607A7278CCAA700A2984E /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6607A6278CCAA700A2984E /* Foods.swift */; };
+		9D6607A9278CCB8100A2984E /* FoodsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6607A8278CCB8100A2984E /* FoodsResponse.swift */; };
 		9D6607AB278CCC5D00A2984E /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6607AA278CCC5D00A2984E /* HomeProtocols.swift */; };
 		9D6607AD278CCD7400A2984E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6607AC278CCD7400A2984E /* HomeInteractor.swift */; };
 		9D6607AF278CCE5D00A2984E /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6607AE278CCE5D00A2984E /* HomePresenter.swift */; };
@@ -84,8 +84,8 @@
 		9D660786278CC55F00A2984E /* FoodMoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodMoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D66078A278CC55F00A2984E /* FoodMoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMoodUITests.swift; sourceTree = "<group>"; };
 		9D66078C278CC55F00A2984E /* FoodMoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9D6607A6278CCAA700A2984E /* Yemekler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemekler.swift; sourceTree = "<group>"; };
-		9D6607A8278CCB8100A2984E /* YemeklerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemeklerResponse.swift; sourceTree = "<group>"; };
+		9D6607A6278CCAA700A2984E /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
+		9D6607A8278CCB8100A2984E /* FoodsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsResponse.swift; sourceTree = "<group>"; };
 		9D6607AA278CCC5D00A2984E /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		9D6607AC278CCD7400A2984E /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		9D6607AE278CCE5D00A2984E /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -260,8 +260,8 @@
 		9D6607A5278CCA8100A2984E /* entity */ = {
 			isa = PBXGroup;
 			children = (
-				9D6607A6278CCAA700A2984E /* Yemekler.swift */,
-				9D6607A8278CCB8100A2984E /* YemeklerResponse.swift */,
+				9D6607A6278CCAA700A2984E /* Foods.swift */,
+				9D6607A8278CCB8100A2984E /* FoodsResponse.swift */,
 				9D6607BF278E17BF00A2984E /* FoodBasket.swift */,
 				9D6607C1278E17C900A2984E /* FoodBasketResponse.swift */,
 			);
@@ -633,7 +633,7 @@
 				9DAFB77327922AF2007DEDA7 /* SearchVC.swift in Sources */,
 				9D66076E278CC55D00A2984E /* HomeVC.swift in Sources */,
 				9DAFB7802792E10C007DEDA7 /* CustomTabBarController.swift in Sources */,
-				9D6607A9278CCB8100A2984E /* YemeklerResponse.swift in Sources */,
+				9D6607A9278CCB8100A2984E /* FoodsResponse.swift in Sources */,
 				9DAFB77927922DAC007DEDA7 /* SearchInteractor.swift in Sources */,
 				9DAFB7862792ED81007DEDA7 /* OnboardingVC.swift in Sources */,
 				9DAFB77D27922E5F007DEDA7 /* SearchRouter.swift in Sources */,
@@ -647,7 +647,7 @@
 				9D6607C4278E19BD00A2984E /* FoodDetailInteractor.swift in Sources */,
 				9D6607C6278E1A1800A2984E /* FoodDetailPresenter.swift in Sources */,
 				9D6607AB278CCC5D00A2984E /* HomeProtocols.swift in Sources */,
-				9D6607A7278CCAA700A2984E /* Yemekler.swift in Sources */,
+				9D6607A7278CCAA700A2984E /* Foods.swift in Sources */,
 				9D6607AD278CCD7400A2984E /* HomeInteractor.swift in Sources */,
 				9D6607BE278E133400A2984E /* FoodDetailProtocols.swift in Sources */,
 				9D6607B4278E016C00A2984E /* FoodTableViewCell.swift in Sources */,

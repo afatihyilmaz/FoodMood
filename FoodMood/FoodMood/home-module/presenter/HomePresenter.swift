@@ -18,7 +18,7 @@ class HomePresenter : ViewToPresenterHomeProtocol {
 }
 
 extension HomePresenter : InteractorToPresenterHomeProtocol {
-    func sendDataToPresenter(foodList: Array<Yemekler>) {
+    func sendDataToPresenter(foodList: Array<Foods>) {
         homeView?.sendDataToView(foodList: foodList)
     }
 }

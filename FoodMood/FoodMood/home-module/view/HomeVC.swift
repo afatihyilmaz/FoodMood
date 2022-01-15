@@ -18,7 +18,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var cvFoodPriceLabel: UILabel!
     @IBOutlet weak var foodsTableView: UITableView!
     
-    var foodList = [Yemekler]()
+    var foodList = [Foods]()
     var homePresenterObject:ViewToPresenterHomeProtocol?
     var basketItemCount = 0
     
@@ -80,7 +80,7 @@ extension HomeVC : UITableViewDelegate, UITableViewDataSource, CellProtocol {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailVC" {
-            let food = sender as? Yemekler
+            let food = sender as? Foods
             let destinationVC = segue.destination as! FoodDetailVC
             destinationVC.food = food
         }
@@ -95,7 +95,7 @@ extension HomeVC : UITableViewDelegate, UITableViewDataSource, CellProtocol {
 }
 
 extension HomeVC : PresenterToViewHomeProtocol {
-    func sendDataToView(foodList: Array<Yemekler>) {
+    func sendDataToView(foodList: Array<Foods>) {
         self.foodList = foodList
         initPopularFoodCardView()
         DispatchQueue.main.async {

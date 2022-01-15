@@ -18,7 +18,7 @@ class SearchPresenter : ViewToPresenterSearchProtocol {
 }
 
 extension SearchPresenter : InteractorToPresenterSearchProtocol {
-    func sendDataToPresenter(foodList: Array<Yemekler>) {
+    func sendDataToPresenter(foodList: Array<Foods>) {
         searchView?.sendDataToView(foodList: foodList)
     }
 }

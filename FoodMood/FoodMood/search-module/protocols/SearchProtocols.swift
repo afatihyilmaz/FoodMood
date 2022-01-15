@@ -24,12 +24,12 @@ protocol ViewToPresenterSearchProtocol {
 
 //Taşıyıcı protocol
 protocol InteractorToPresenterSearchProtocol {
-    func sendDataToPresenter(foodList:Array<Yemekler>)
+    func sendDataToPresenter(foodList:Array<Foods>)
 }
 
 //Taşıyıcı Protocol
 protocol PresenterToViewSearchProtocol {
-    func sendDataToView(foodList:Array<Yemekler>)
+    func sendDataToView(foodList:Array<Foods>)
 }
 
 //Router protocol

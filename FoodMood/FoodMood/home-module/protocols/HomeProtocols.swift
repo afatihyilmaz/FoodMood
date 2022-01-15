@@ -24,12 +24,12 @@ protocol ViewToPresenterHomeProtocol {
 
 //Taşıyıcı protocol
 protocol InteractorToPresenterHomeProtocol {
-    func sendDataToPresenter(foodList:Array<Yemekler>)
+    func sendDataToPresenter(foodList:Array<Foods>)
 }
 
 //Taşıyıcı Protocol
 protocol PresenterToViewHomeProtocol {
-    func sendDataToView(foodList:Array<Yemekler>)
+    func sendDataToView(foodList:Array<Foods>)
 }
 
 //Router protocol

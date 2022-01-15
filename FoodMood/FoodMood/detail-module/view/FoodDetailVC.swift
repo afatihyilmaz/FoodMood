@@ -22,7 +22,7 @@ class FoodDetailVC: UIViewController {
     var basketItemCount = 0
     
     var foodDetailPresenterObject : ViewToPresenterFoodDetailProtocol?
-    var food:Yemekler?
+    var food:Foods?
     
     override func viewDidLoad() {
         super.viewDidLoad()
