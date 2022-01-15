@@ -83,8 +83,10 @@ class FoodDetailVC: UIViewController {
             ud.set(basketItemCount, forKey: "basketItemCount")
             
             //Create alert
-            let alert = UIAlertController(title: "Congrats", message: "\(f.yemek_adi!) added to basket", preferredStyle: .alert)
-            let confirmAction = UIAlertAction(title: "Done", style: .cancel) { action in
+            let alert = UIAlertController(title: "Congrats", message: "\(f.yemek_adi!) added to basket. Would you like to continue shopping?", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "No", style: .destructive){ action in   }
+            alert.addAction(cancelAction)
+            let confirmAction = UIAlertAction(title: "Yes", style: .cancel) { action in
                 self.navigationController?.popToRootViewController(animated: true)
             }
             alert.addAction(confirmAction)
